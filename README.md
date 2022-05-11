@@ -1,5 +1,6 @@
 ![image](https://user-images.githubusercontent.com/19487451/167883263-e96a9e7f-973c-4714-ad47-01253b2db670.png)
 
+![image](https://user-images.githubusercontent.com/19487451/167885369-a5ae0b14-9176-4429-babd-2a140ab5880a.png) <br>&nbsp;&nbsp;Studio 2.3+
 
 Welcome to the outline-shader-drawer repository!
 
