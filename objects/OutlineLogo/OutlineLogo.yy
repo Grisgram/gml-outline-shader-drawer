@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprMace",
-    "path": "sprites/sprMace/sprMace.yy",
+    "name": "sprOutlineTitle",
+    "path": "sprites/sprOutlineTitle/sprOutlineTitle.yy",
   },
   "solid": false,
   "visible": true,
@@ -30,17 +30,18 @@
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
-    {"varType":4,"value":"c_red","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"outline_color_click","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":4,"value":"#FF7700","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"outline_color_click","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [
-    {"propertyId":{"name":"outline_color","path":"objects/OutlineObject/OutlineObject.yy",},"objectId":{"name":"OutlineObject","path":"objects/OutlineObject/OutlineObject.yy",},"value":"c_white","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"outline_color","path":"objects/OutlineObject/OutlineObject.yy",},"objectId":{"name":"OutlineObject","path":"objects/OutlineObject/OutlineObject.yy",},"value":"c_red","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"outline_strength","path":"objects/OutlineObject/OutlineObject.yy",},"objectId":{"name":"OutlineObject","path":"objects/OutlineObject/OutlineObject.yy",},"value":"5","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "objects",
     "path": "folders/demo/objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "DemoMace",
+  "name": "OutlineLogo",
   "tags": [],
   "resourceType": "GMObject",
 }

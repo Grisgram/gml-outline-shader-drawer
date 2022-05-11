@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"DemoMace","path":"objects/DemoMace/DemoMace.yy",},"order":1,},
     {"id":{"name":"seqRotatingLoop","path":"sequences/seqRotatingLoop/seqRotatingLoop.yy",},"order":2,},
+    {"id":{"name":"OutlineLogo","path":"objects/OutlineLogo/OutlineLogo.yy",},"order":8,},
     {"id":{"name":"OutlineObject","path":"objects/OutlineObject/OutlineObject.yy",},"order":2,},
     {"id":{"name":"sprSingleCoin","path":"sprites/sprSingleCoin/sprSingleCoin.yy",},"order":0,},
     {"id":{"name":"DemoPotion","path":"objects/DemoPotion/DemoPotion.yy",},"order":6,},
@@ -11,6 +12,7 @@
     {"id":{"name":"DemoTextDrawer","path":"objects/DemoTextDrawer/DemoTextDrawer.yy",},"order":3,},
     {"id":{"name":"sprMace","path":"sprites/sprMace/sprMace.yy",},"order":3,},
     {"id":{"name":"sprRedPotion","path":"sprites/sprRedPotion/sprRedPotion.yy",},"order":4,},
+    {"id":{"name":"sprOutlineTitle","path":"sprites/sprOutlineTitle/sprOutlineTitle.yy",},"order":7,},
     {"id":{"name":"shd_outline","path":"shaders/shd_outline/shd_outline.yy",},"order":1,},
     {"id":{"name":"rmDemo","path":"rooms/rmDemo/rmDemo.yy",},"order":0,},
   ],

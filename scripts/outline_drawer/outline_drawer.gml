@@ -17,14 +17,14 @@
 		Please respect the MIT License for this Library.
 */
 
-/// @function			outline_drawer(_viewport = 0, _outline_color = c_black, _outline_alpha = 1, _outline_strength = 2, _alpha_fading = true)
+/// @function			outline_drawer(_viewport = 0, _outline_color = c_black, _outline_alpha = 1, _outline_strength = 3, _alpha_fading = true)
 /// @description				
 /// @param {int=0}			_viewport
-/// @param {color=c_black}	_outline_color
+/// @param {color=c_white}	_outline_color
 /// @param {real=1}			_outline_alpha
-/// @param {int=2}			_outline_strength
+/// @param {int=3}			_outline_strength
 /// @param {bool=true}		_alpha_fading
-function outline_drawer(_viewport = 0, _outline_color = c_black, _outline_alpha = 1, _outline_strength = 2, _alpha_fading = true) constructor {
+function outline_drawer(_viewport = 0, _outline_color = c_white, _outline_alpha = 1, _outline_strength = 3, _alpha_fading = true) constructor {
 	__outline_surface_1 = -1;
 	__outline_surface_2 = -1;
 
@@ -33,7 +33,8 @@ function outline_drawer(_viewport = 0, _outline_color = c_black, _outline_alpha 
 	
 	shader				= shd_outline;
 
-	outline_color		= _outline_color;
+//	outline_color		= _outline_color;
+	outline_color		= make_color_rgb(color_get_red(_outline_color),color_get_green(_outline_color),color_get_blue(_outline_color));
 	outline_alpha		= _outline_alpha;
 	outline_strength	= _outline_strength;
 	alpha_fading		= _alpha_fading;
