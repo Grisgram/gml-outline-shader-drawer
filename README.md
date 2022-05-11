@@ -1,4 +1,5 @@
-![image](https://user-images.githubusercontent.com/19487451/167881313-1b26721e-8c82-43e2-aca7-5ddbe41220ec.png)
+![image](https://user-images.githubusercontent.com/19487451/167883263-e96a9e7f-973c-4714-ad47-01253b2db670.png)
+
 
 Welcome to the outline-shader-drawer repository!
 
@@ -30,3 +31,8 @@ When importing, a `outline-shader-drawer` group is created in the root of your p
 
 
 Find the documentation in the [Wiki](https://github.com/Grisgram/gml-outline-shader-drawer/wiki).
+
+Licence: MIT (Contained in the repository)
+Authors: Grisgram and Juju Adams
+
+(c)2022 risingdemons.com
