@@ -33,6 +33,8 @@ When importing, a `outline-shader-drawer` group is created in the root of your p
 Find the documentation in the [Wiki](https://github.com/Grisgram/gml-outline-shader-drawer/wiki).
 
 Licence: MIT (Contained in the repository)
+
 Authors: Grisgram and Juju Adams
+
 
 (c)2022 risingdemons.com
