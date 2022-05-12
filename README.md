@@ -35,7 +35,7 @@ Find the documentation in the [Wiki](https://github.com/Grisgram/gml-outline-sha
 
 License: MIT (Contained in the repository)
 
-Authors: Grisgram and Juju Adams
+Authors: [Grisgram](https://github.com/Grisgram) and [Juju Adams](https://github.com/JujuAdams)
 
 
 (c)2022 risingdemons.com
