@@ -9,10 +9,6 @@
 		See the DemoTank object in the Demo Project of the original repository at 
 		https://github.com/Grisgram/gml-outline-shader-drawer
 		
-		************************************************************
-		*** NOTE: THIS SHADER DOES NOT WORK ON THE HTML5 TARGET! ***
-		************************************************************
-		
 		(c)2022 Grisgram aka Haerion@GameMakerKitchen Discord
 		Please respect the MIT License for this Library.
 */
@@ -27,6 +23,10 @@
 function outline_drawer(_viewport = 0, _outline_color = c_white, _outline_alpha = 1, _outline_strength = 3, _alpha_fading = true) constructor {
 	__outline_surface_1 = -1;
 	__outline_surface_2 = -1;
+
+	// html flips the final surface vertically... hell knows, why.
+	// so, on html we need to draw it upside down.
+	__draw_yscale = (os_browser != browser_not_a_browser) ? -1 : 1;
 
 	viewport			= _viewport;
 	camera				= view_get_camera(_viewport);
@@ -141,7 +141,10 @@ function outline_drawer(_viewport = 0, _outline_color = c_white, _outline_alpha 
 		surface_reset_target();
 
 		//Draw surface 2
-		draw_surface(__outline_surface_2, _obj.bbox_left - outline_strength - 1, _obj.bbox_top - outline_strength - 1);
+		draw_surface_ext(__outline_surface_2, 
+			_obj.bbox_left - outline_strength - 1, 
+			(__draw_yscale == 1 ? _obj.bbox_top  - outline_strength - 1 : _obj.bbox_bottom + outline_strength + 2),
+			1, __draw_yscale, 0, c_white, 1);
 
 		return true;
 

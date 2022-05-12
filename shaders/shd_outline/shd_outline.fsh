@@ -1,6 +1,7 @@
 ///
 /// variable-pixel-width outline shader
 /// Based on juju adams' selective outline and improved with alpha fading and variable thickness
+/// even on HTML5 target
 ///
 ///		(c)2022 Grisgram aka Haerion@GameMakerKitchen Discord
 ///		Please respect the MIT License for this Library.
@@ -9,6 +10,7 @@
 
 const float ALPHA_THRESHOLD      = 1.0/255.0;
 const float BRIGHTNESS_THRESHOLD = 1.0;
+const float MAX_OUTLINE_STRENGTH = 10.0;
 
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
@@ -39,27 +41,46 @@ void main()
 	float alphaVal = 0.0;		// set by both for loops below (decides alpha fading)
     float edgeAlphaMax = 0.0;
 
+	// The "continue" and "breaks" in the loops below are for HTML/WEBGL compatibility
+	// A WebGL shader must be compiled with a constant range in "for" loops.
+	// So I defined a max-width of 10 for the outline but skip all values 
+	// below and above the desired range. A minor performance loss and a great comfort gain
+
 	if (u_vThickness.y == 1.0) { // Alpha fading = true
 		float pxCount = u_vThickness.x * u_vThickness.x * 2.0;
-		float pxHit = 0.0;
+		float pxHit = 0.0; 
 		float curA = 0.0;
-	    for(float dX = -u_vThickness.x; dX <= u_vThickness.x; dX += 1.0)
+	    for(float dX = -MAX_OUTLINE_STRENGTH; dX <= MAX_OUTLINE_STRENGTH; dX += 1.0)
 	    {
-	        for(float dY = -u_vThickness.x; dY <= u_vThickness.x; dY += 1.0)
+			if (dX < -u_vThickness.x) continue;
+			
+	        for(float dY = -MAX_OUTLINE_STRENGTH; dY <= MAX_OUTLINE_STRENGTH; dY += 1.0)
 	        {
+				if (dY < -u_vThickness.x) continue;
+				
 				curA = texture2D(u_sSpriteSurface, v_vSurfaceUV + vec2(dX, dY)*u_vTexel).a;
 				if (curA >= ALPHA_THRESHOLD) pxHit++;
 	            edgeAlphaMax = max(edgeAlphaMax, curA);
+				
+				if (dY > u_vThickness.x) break;
 	        }
+			
+			if (dX > u_vThickness.x) break;
 	    }
 		alphaVal = 0.25 + pxHit/pxCount;
 	} else { // no alpha fading
-	    for(float dX = -u_vThickness.x; dX <= u_vThickness.x; dX += 1.0)
+	    for(float dX = -MAX_OUTLINE_STRENGTH; dX <= MAX_OUTLINE_STRENGTH; dX += 1.0)
 	    {
-	        for(float dY = -u_vThickness.x; dY <= u_vThickness.x; dY += 1.0)
+			if (dX < -u_vThickness.x) continue;
+			
+	        for(float dY = -MAX_OUTLINE_STRENGTH; dY <= MAX_OUTLINE_STRENGTH; dY += 1.0)
 	        {
+				if (dY < -u_vThickness.x) continue;
 	            edgeAlphaMax = max(edgeAlphaMax, texture2D(u_sSpriteSurface, v_vSurfaceUV + vec2(dX, dY)*u_vTexel).a);
+				if (dY > u_vThickness.x) break;
 	        }
+			
+			if (dX > u_vThickness.x) break;
 	    }
 		alphaVal = edgeAlphaMax;
 	}
