@@ -26,7 +26,7 @@ function outline_drawer(_viewport = 0, _outline_color = c_white, _outline_alpha 
 
 	// html flips the final surface vertically... hell knows, why.
 	// so, on html we need to draw it upside down.
-	__draw_yscale = (os_browser != browser_not_a_browser) ? -1 : 1;
+	__flip_vertical			= (os_browser != browser_not_a_browser);
 
 	viewport			= _viewport;
 	camera				= view_get_camera(_viewport);
@@ -141,10 +141,19 @@ function outline_drawer(_viewport = 0, _outline_color = c_white, _outline_alpha 
 		surface_reset_target();
 
 		//Draw surface 2
-		draw_surface_ext(__outline_surface_2, 
-			_obj.bbox_left - outline_strength - 1, 
-			(__draw_yscale == 1 ? _obj.bbox_top  - outline_strength - 1 : _obj.bbox_bottom + outline_strength + 2),
-			1, __draw_yscale, 0, c_white, 1);
+		if (__flip_vertical) {
+			// as we increase the surface only when needed but never shrink (for performance)
+			// we need the current_dimensions here for correct rendering in html (surface_get_height)
+			draw_surface_ext(__outline_surface_2, 
+				_obj.bbox_left - outline_strength - 1,
+				_obj.bbox_top + surface_get_height(__outline_surface_2) - outline_strength - 1,
+				1, -1, 0, c_white, 1);
+		} else {
+			draw_surface_ext(__outline_surface_2, 
+				_obj.bbox_left - outline_strength - 1, 
+				_obj.bbox_top  - outline_strength - 1,
+				1, 1, 0, c_white, 1);
+		}
 
 		return true;
 
