@@ -131,11 +131,11 @@ function outline_drawer(_viewport = 0, _outline_color = c_white, _outline_alpha 
 		shader_set_uniform_f(shader_get_uniform(shader, "u_vThickness"), outline_strength, alpha_fading ? 1 : 0); // thickness x, y
 
 		draw_surface_part_ext(application_surface,
-		                      _surface_l, _surface_t,
-		                      _surface_r, _surface_b,
-		                      0, 0,
-		                      1/_camera_xscale, 1/_camera_yscale,
-		                      c_white, 1.0);
+			_surface_l, _surface_t,
+			_surface_r, _surface_b,
+			0, 0,
+			1/_camera_xscale, 1/_camera_yscale,
+			c_white, 1.0);
 
 		shader_reset();
 		surface_reset_target();
