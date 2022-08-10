@@ -37,5 +37,9 @@ License: MIT (Contained in the repository)
 
 Authors: [Grisgram](https://github.com/Grisgram) and [Juju Adams](https://github.com/JujuAdams)
 
+If you like what you see, ✨ the repository and consider following me. The more reach the libraries get, the better they can evolve!
+Thank you!
+
+Gris.
 
 (c)2022 risingdemons.com
