@@ -6,6 +6,7 @@
     {"id":{"name":"OutlineObject","path":"objects/OutlineObject/OutlineObject.yy",},"order":2,},
     {"id":{"name":"sprSingleCoin","path":"sprites/sprSingleCoin/sprSingleCoin.yy",},"order":0,},
     {"id":{"name":"DemoPotion","path":"objects/DemoPotion/DemoPotion.yy",},"order":6,},
+    {"id":{"name":"_OUTLINE_SHADER_DRAWER_VERSION_","path":"scripts/_OUTLINE_SHADER_DRAWER_VERSION_/_OUTLINE_SHADER_DRAWER_VERSION_.yy",},"order":3,},
     {"id":{"name":"sprHellToHeaven","path":"sprites/sprHellToHeaven/sprHellToHeaven.yy",},"order":4,},
     {"id":{"name":"outline_drawer","path":"scripts/outline_drawer/outline_drawer.yy",},"order":0,},
     {"id":{"name":"RotatingCoin","path":"objects/RotatingCoin/RotatingCoin.yy",},"order":1,},
@@ -51,7 +52,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.3.0.625",
+    "IDEVersion": "2022.6.1.26",
   },
   "resourceVersion": "1.5",
   "name": "gml-outline-shader-drawer",
