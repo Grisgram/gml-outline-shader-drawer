@@ -1,0 +1,18 @@
+{
+  "FolderOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"DemoMace","order":1,"path":"objects/DemoMace/DemoMace.yy",},
+    {"name":"seqRotatingLoop","order":2,"path":"sequences/seqRotatingLoop/seqRotatingLoop.yy",},
+    {"name":"OutlineLogo","order":8,"path":"objects/OutlineLogo/OutlineLogo.yy",},
+    {"name":"OutlineObject","order":2,"path":"objects/OutlineObject/OutlineObject.yy",},
+    {"name":"DemoPotion","order":6,"path":"objects/DemoPotion/DemoPotion.yy",},
+    {"name":"_OUTLINE_SHADER_DRAWER_VERSION_","order":3,"path":"scripts/_OUTLINE_SHADER_DRAWER_VERSION_/_OUTLINE_SHADER_DRAWER_VERSION_.yy",},
+    {"name":"sprHellToHeaven","order":4,"path":"sprites/sprHellToHeaven/sprHellToHeaven.yy",},
+    {"name":"RotatingCoin","order":1,"path":"objects/RotatingCoin/RotatingCoin.yy",},
+    {"name":"DemoTextDrawer","order":3,"path":"objects/DemoTextDrawer/DemoTextDrawer.yy",},
+    {"name":"sprMace","order":3,"path":"sprites/sprMace/sprMace.yy",},
+    {"name":"sprRedPotion","order":4,"path":"sprites/sprRedPotion/sprRedPotion.yy",},
+    {"name":"sprOutlineTitle","order":7,"path":"sprites/sprOutlineTitle/sprOutlineTitle.yy",},
+    {"name":"shd_outline","order":1,"path":"shaders/shd_outline/shd_outline.yy",},
+  ],
+}
