@@ -6,7 +6,8 @@ draw_text(10, 10,
 "Outline Drawer Demo\nHover the mouse over any of the objects.\n" +
 "Press 1-5 to set strength of outline\n" +
 "Press A to toggle alpha fading of the outline (better visuals with strength 4+)\n" +
-"Mace+Potion: Press R to let the sprite rotate slowly so you can watch rotating outlines" 
+"Mace+Potion: Press R to let the sprite rotate slowly so you can watch rotating outlines\n" +
+"The Mace uses OutlineObject and the Potion uses OutlineObjectBaked (prebaked shader)"
 );
 
 draw_set_color(c_white);

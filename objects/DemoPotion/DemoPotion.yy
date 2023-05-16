@@ -11,14 +11,15 @@
   "managed": true,
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"OutlineObject","path":"objects/OutlineObject/OutlineObject.yy",},"propertyId":{"name":"outline_color","path":"objects/OutlineObject/OutlineObject.yy",},"value":"c_white",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"OutlineObject","path":"objects/OutlineObject/OutlineObject.yy",},"propertyId":{"name":"use_bbox_of_sprite","path":"objects/OutlineObject/OutlineObject.yy",},"value":"False",},
   ],
   "parent": {
     "name": "objects",
     "path": "folders/demo/objects.yy",
   },
   "parentObjectId": {
-    "name": "OutlineObject",
-    "path": "objects/OutlineObject/OutlineObject.yy",
+    "name": "OutlineObjectBaked",
+    "path": "objects/OutlineObjectBaked/OutlineObjectBaked.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
