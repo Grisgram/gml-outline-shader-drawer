@@ -1,8 +1,8 @@
 {
   "FolderOrderSettings": [
     {"name":"_third_party_packages_","order":3,"path":"folders/_third_party_packages_.yy",},
-    {"name":"outline-shader-drawer","order":4,"path":"folders/outline-shader-drawer.yy",},
     {"name":"System","order":1,"path":"folders/_third_party_packages_/Canvas/System.yy",},
+    {"name":"outline-shader-drawer","order":4,"path":"folders/outline-shader-drawer.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"Canvas","order":2,"path":"scripts/Canvas/Canvas.yy",},

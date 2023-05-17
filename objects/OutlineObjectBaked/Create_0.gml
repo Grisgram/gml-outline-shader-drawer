@@ -16,6 +16,7 @@ bake = function() {
 	var u_texel				= shader_get_uniform(shader, "u_vTexel");
 	var u_outline_color		= shader_get_uniform(shader, "u_vOutlineColour");
 	var u_thickness			= shader_get_uniform(shader, "u_vThickness");
+	var u_vPulse			= shader_get_uniform(shader, "u_vPulse");
 
 	canvas = sprite_to_canvas(sprite_index, -1, outline_strength + TEXTURE_PAGE_BORDER_SIZE);
 	// now bake it with the outliner
@@ -28,6 +29,7 @@ bake = function() {
 	shader_set_uniform_f(u_texel		, texture_get_texel_width(_texture), texture_get_texel_height(_texture));
 	shader_set_uniform_f(u_outline_color, outliner.outline_color, outliner.outline_alpha); //colour, alpha
 	shader_set_uniform_f(u_thickness	, outliner.outline_strength, outliner.alpha_fading ? 1 : 0); // thickness x, y
+	shader_set_uniform_f(u_vPulse		, outliner.outline_strength, outliner.outline_strength, 1, 0);
 
 	draw_surface(canvas.canvas.GetSurfaceID(),outliner.outline_strength,outliner.outline_strength);
 

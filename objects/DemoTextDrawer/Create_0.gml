@@ -1,2 +1,2 @@
 /// @description event
-//show_debug_overlay(true);
+show_debug_overlay(true);
