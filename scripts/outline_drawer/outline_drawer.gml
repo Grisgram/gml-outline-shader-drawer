@@ -51,20 +51,29 @@ function outline_drawer(_viewport = 0, _outline_color = c_white, _outline_alpha 
 		if (!surface_exists(__outline_surface_2)) __outline_surface_2 = surface_create(1, 1);
 	}
 
-	static set_shader_pulse = function(_min_strength, _max_strength, _frequency) {
+	/// @function		set_shader_pulse(_min_strength, _max_strength, _color_1, _color_2, _frequency)
+	static set_shader_pulse = function(_min_strength, _max_strength, _color_1, _color_2, _frequency) {
 		pulse_min		= _min_strength;
 		pulse_max		= _max_strength;
+		pulse_color_1	= _color_1;
+		pulse_color_2	= _color_2;
 		pulse_frequency = _frequency;
 		pulse_time		= 0;
+		pulse_pit		= 0;
 	}
 
+	/// @function		clear_shader_pulse()
 	static clear_shader_pulse = function() {
-		pulse_min			= outline_strength;
-		pulse_max			= outline_strength;
-		pulse_frequency		= 1;
-		pulse_time			= 0;
+		pulse_min		= outline_strength;
+		pulse_max		= outline_strength;
+		pulse_color_1	= outline_color;
+		pulse_color_2	= outline_color;
+		pulse_frequency	= 1;
+		pulse_time		= 0;
+		pulse_pit		= 0;
 	}
 
+	/// @function		draw_sprite_outline(_obj, _index, _x, _y, _xscale = 1, _yscale = 1, _rotation = 0, _sprite_colour = c_white, _sprite_alpha = 1)
 	static draw_sprite_outline = function(_obj, _index, _x, _y, _xscale = 1, _yscale = 1, _rotation = 0, _sprite_colour = c_white, _sprite_alpha = 1) {
 		__update_surfaces();
 		var _sprite = _obj.sprite_index;
@@ -158,7 +167,9 @@ function outline_drawer(_viewport = 0, _outline_color = c_white, _outline_alpha 
 		draw_clear_alpha(c_black, 0.0);
 
 		pulse_time = (pulse_time + 1) % pulse_frequency;
-
+		pulse_pit = pulse_time / pulse_frequency;
+		outline_color = merge_color(pulse_color_1, pulse_color_2, ((pulse_pit > 0.5) ? 1.0 - pulse_pit : pulse_pit) * 2);
+		
 		shader_set(shader);
 		var _texture = surface_get_texture(__outline_surface_1);
 		texture_set_stage(shader_get_sampler_index(shader, "u_sSpriteSurface"), _texture);
