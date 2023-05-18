@@ -7,7 +7,7 @@ This shader is based on a Version of [@JujuAdams](https://github.com/JujuAdams/J
 
 The shader now offers rich functionality and supports even drawing of rotating sprites, by using their bounding box to set up the surfaces needed to draw the correct outline and it also offers `Alpha Fading` and `Pulse animations`.
 
-What is Alpha Fading and what is a pulse animation, you ask?? Well, pictures tell more than a thousand words:
+What is _Alpha Fading_ and what is a _Pulse Animation_, you ask?? Well, pictures tell more than a thousand words:
 
 | No alpha fading | Active alpha fading |
 |-|-|
