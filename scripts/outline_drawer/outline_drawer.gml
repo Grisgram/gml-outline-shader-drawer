@@ -36,7 +36,8 @@ function outline_drawer(_viewport = 0, _outline_color = c_white, _outline_alpha 
 	
 	shader				= shd_outline;
 	u_texel				= shader_get_uniform(shader, "u_vTexel");
-	u_outline_color		= shader_get_uniform(shader, "u_vOutlineColour");
+	u_outline_color_1	= shader_get_uniform(shader, "u_vOutlineColour1");
+	u_outline_color_2	= shader_get_uniform(shader, "u_vOutlineColour2");
 	u_thickness			= shader_get_uniform(shader, "u_vThickness");
 	u_vPulse			= shader_get_uniform(shader, "u_vPulse");
 	
@@ -55,8 +56,8 @@ function outline_drawer(_viewport = 0, _outline_color = c_white, _outline_alpha 
 	static set_shader_pulse = function(_min_strength, _max_strength, _color_1, _color_2, _frequency) {
 		pulse_min		= _min_strength;
 		pulse_max		= _max_strength;
-		pulse_color_1	= _color_1;
-		pulse_color_2	= _color_2;
+		pulse_color_1	= make_color_rgb(color_get_red(_color_1),color_get_green(_color_1),color_get_blue(_color_1));
+		pulse_color_2	= make_color_rgb(color_get_red(_color_2),color_get_green(_color_2),color_get_blue(_color_2));
 		pulse_frequency = _frequency;
 		pulse_time		= 0;
 		pulse_pit		= 0;
@@ -167,16 +168,15 @@ function outline_drawer(_viewport = 0, _outline_color = c_white, _outline_alpha 
 		draw_clear_alpha(c_black, 0.0);
 
 		pulse_time = (pulse_time + 1) % pulse_frequency;
-		pulse_pit = pulse_time / pulse_frequency;
-		outline_color = merge_color(pulse_color_1, pulse_color_2, ((pulse_pit > 0.5) ? 1.0 - pulse_pit : pulse_pit) * 2);
 		
 		shader_set(shader);
 		var _texture = surface_get_texture(__outline_surface_1);
 		texture_set_stage(shader_get_sampler_index(shader, "u_sSpriteSurface"), _texture);
-		shader_set_uniform_f(u_texel		, texture_get_texel_width(_texture), texture_get_texel_height(_texture));
-		shader_set_uniform_f(u_outline_color, outline_color, outline_alpha); //colour, alpha
-		shader_set_uniform_f(u_thickness	, outline_strength, alpha_fading ? 1 : 0); // thickness x, y
-		shader_set_uniform_f(u_vPulse		, pulse_min, pulse_max, pulse_frequency, pulse_time);
+		shader_set_uniform_f(u_texel			, texture_get_texel_width(_texture), texture_get_texel_height(_texture));
+		shader_set_uniform_f(u_thickness		, outline_strength, alpha_fading ? 1 : 0); // thickness x, y
+		shader_set_uniform_f(u_outline_color_1	, pulse_color_1, outline_alpha); //colour, alpha
+		shader_set_uniform_f(u_outline_color_2	, pulse_color_2, outline_alpha); //colour, alpha
+		shader_set_uniform_f(u_vPulse			, pulse_min, pulse_max, pulse_frequency, pulse_time);
 
 		draw_surface_part_ext(application_surface,
 			_surface_l, _surface_t,

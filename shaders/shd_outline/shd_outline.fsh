@@ -18,7 +18,8 @@ varying vec2 v_vSurfaceUV;
 
 uniform sampler2D u_sSpriteSurface;
 uniform vec2 u_vTexel;
-uniform vec2 u_vOutlineColour;
+uniform vec2 u_vOutlineColour1;
+uniform vec2 u_vOutlineColour2;
 uniform vec2 u_vThickness;
 uniform vec4 u_vPulse;
 
@@ -105,7 +106,10 @@ void main()
     {
         if ((edgeAlphaMax >= ALPHA_THRESHOLD) && (appSurfBrightness < BRIGHTNESS_THRESHOLD))
         {
-            gl_FragColor = unpackGMColour(u_vOutlineColour, alphaVal);
+			vec4 c1 = unpackGMColour(u_vOutlineColour1, alphaVal);
+			vec4 c2 = unpackGMColour(u_vOutlineColour2, alphaVal);
+			pit *= 2.0;
+            gl_FragColor = c1 * (1.0 - pit) + c2 * pit;
         }
     }
     else
