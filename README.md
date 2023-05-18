@@ -3,7 +3,7 @@
 
 ### Welcome to the outline-shader-drawer for **GameMaker Studio 2.3+** repository!
 
-This shader is based on a Version of @JujuAdams, credits to him for the basic implementation to draw a sprite outlined. He helped me in implementing varying outline strengths, and I took over from that point.
+This shader is based on a Version of @JujuAdams , credits to him for the basic implementation to draw a sprite outlined. He helped me in implementing varying outline strengths, and I took over from that point.
 
 The shader now offers rich functionality and supports even drawing of rotating sprites, by using their bounding box to set up the surfaces needed to draw the correct outline and it also offers `Alpha Fading` and `Pulse animations`.
 
