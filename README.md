@@ -15,6 +15,12 @@ What is Alpha Fading and what is a pulse animation, you ask?? Well, pictures tel
 |-|-|
 |![image](https://user-images.githubusercontent.com/19487451/167878549-e1cea8a9-813e-4a68-b7c9-f051d94b5880.png)|![image](https://user-images.githubusercontent.com/19487451/167878604-0ad44568-cb0f-4d36-aff1-e2b2bf8eef83.png)|
 
+| Pulse with strength | Pulse with color |
+|-|-|
+|![pulse-shader-strength](https://github.com/Grisgram/gml-outline-shader-drawer/assets/19487451/ee31a41d-b4e0-47a6-a30f-a08eea0d0c71)|![pulse-shader-color](https://github.com/Grisgram/gml-outline-shader-drawer/assets/19487451/08218aa3-d9cd-4c1a-9883-7eff733a94f0)|
+
+**Of course, those effects can be combined and you may create a `strength + color` pulse!**
+
 With this shader you can create stunning outline effects when the mouse touches an object!
 Go, try it out!
 
