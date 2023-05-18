@@ -7,9 +7,9 @@ Welcome to the outline-shader-drawer repository!
 
 This shader is based on a Version of [Juju Adams](https://github.com/JujuAdams), credits to him for the basic implementation to draw a sprite outlined. He helped me in implementing varying outline strengths, and I took over from that point.
 
-The shader now offers rich functionality and supports even drawing of rotating sprites, by using their bounding box to set up the surfaces needed to draw the correct outline and it also offers `Alpha Fading`.
+The shader now offers rich functionality and supports even drawing of rotating sprites, by using their bounding box to set up the surfaces needed to draw the correct outline and it also offers `Alpha Fading` and `Pulse animations`.
 
-What is Alpha Fading you ask?? Well, two pictures tell more than a thousand words:
+What is Alpha Fading and what is a pulse animation, you ask?? Well, pictures tell more than a thousand words:
 
 | No alpha fading | Active alpha fading |
 |-|-|
