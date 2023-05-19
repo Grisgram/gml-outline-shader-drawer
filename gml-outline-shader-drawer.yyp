@@ -37,6 +37,7 @@
     {"id":{"name":"sprSingleCoin","path":"sprites/sprSingleCoin/sprSingleCoin.yy",},},
     {"id":{"name":"__CanvasAppSurf","path":"scripts/__CanvasAppSurf/__CanvasAppSurf.yy",},},
     {"id":{"name":"DemoPotion","path":"objects/DemoPotion/DemoPotion.yy",},},
+    {"id":{"name":"sprRedPotionAnim","path":"sprites/sprRedPotionAnim/sprRedPotionAnim.yy",},},
     {"id":{"name":"sprHellToHeaven","path":"sprites/sprHellToHeaven/sprHellToHeaven.yy",},},
     {"id":{"name":"__CanvasCleanupQueue","path":"scripts/__CanvasCleanupQueue/__CanvasCleanupQueue.yy",},},
     {"id":{"name":"__CanvasTrace","path":"scripts/__CanvasTrace/__CanvasTrace.yy",},},

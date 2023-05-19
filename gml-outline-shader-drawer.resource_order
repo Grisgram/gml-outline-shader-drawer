@@ -14,6 +14,7 @@
     {"name":"CanvasIsCanvas","order":4,"path":"scripts/CanvasIsCanvas/CanvasIsCanvas.yy",},
     {"name":"sprite_to_canvas","order":5,"path":"scripts/sprite_to_canvas/sprite_to_canvas.yy",},
     {"name":"DemoPotion","order":6,"path":"objects/DemoPotion/DemoPotion.yy",},
+    {"name":"sprRedPotionAnim","order":9,"path":"sprites/sprRedPotionAnim/sprRedPotionAnim.yy",},
     {"name":"sprHellToHeaven","order":4,"path":"sprites/sprHellToHeaven/sprHellToHeaven.yy",},
     {"name":"__CanvasCleanupQueue","order":1,"path":"scripts/__CanvasCleanupQueue/__CanvasCleanupQueue.yy",},
     {"name":"__CanvasTrace","order":6,"path":"scripts/__CanvasTrace/__CanvasTrace.yy",},
