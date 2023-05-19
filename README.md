@@ -1,5 +1,5 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/19487451/167883263-e96a9e7f-973c-4714-ad47-01253b2db670.png"></img></h1>
-<h1 align="center">🔹🔷 VERSION 3️⃣.0️⃣.1️⃣ 🔷🔹</h1>
+<h1 align="center">3️⃣.0️⃣.2️⃣</h1>
 
 ### Welcome to the outline-shader-drawer for **GameMaker Studio 2.3+** repository!
 
