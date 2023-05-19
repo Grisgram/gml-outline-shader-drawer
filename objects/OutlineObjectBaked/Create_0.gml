@@ -52,7 +52,6 @@ bake = function() {
 	
 	dynsprite = canvas.create_sprite();
 	sprite_set_bbox_mode(dynsprite, bboxmode_manual); 
-		//sprite_get_bbox_mode(sprite_index));
 	sprite_set_bbox(dynsprite,
 		sprite_get_bbox_left  (sprite_index) + __browser_flip * (2 * outliner.outline_strength + TEXTURE_PAGE_BORDER_SIZE / 2),
 		sprite_get_bbox_top   (sprite_index) + __browser_flip * (2 * outliner.outline_strength + TEXTURE_PAGE_BORDER_SIZE / 2),
@@ -66,19 +65,11 @@ __draw = function() {
 	if (canvas == undefined) bake();
 	var before = sprite_index;
 	sprite_index = (outline_always || (outline_on_mouse_over && mouse_is_over)) ? dynsprite : origsprite;
+	if (mouse_is_over && before != sprite_index) mouse_is_over = true;
 	if (sprite_index != before && (os_browser != browser_not_a_browser)) image_yscale *= __browser_flip;
 	image_index = canvas.get_image_index(delta_time, image_speed);
-	//if (outline_always || (outline_on_mouse_over && mouse_is_over))
-	//	canvas.draw_frame_ext(image_index, x, y, depth,	image_xscale, image_yscale, image_angle, image_blend, image_alpha);
-	//else
-		draw_self();
-		draw_set_color(c_green);
-		draw_rectangle(
-			x-sprite_xoffset+sprite_get_bbox_left  (sprite_index),
-			y-sprite_yoffset+sprite_get_bbox_top   (sprite_index),
-			x-sprite_xoffset+sprite_get_bbox_right (sprite_index),
-			y-sprite_yoffset+sprite_get_bbox_bottom(sprite_index),true);
-		draw_set_color(c_white);
+
+	draw_self();
 }
 
 if (sprite_index != -1) bake();

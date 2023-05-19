@@ -100,11 +100,8 @@ function CanvasSprite(_canvas, _image_count, _fps, _xoffset, _yoffset, _bordersi
 	/// @description	Creates a dynamic sprite out of the frames of this canvas surface
 	static create_sprite = function() {
 		var rv = sprite_create_from_surface(canvas.GetSurfaceID(),0,0,image_width,image_height,false,false,xoffset+bordersize,yoffset+bordersize);
-		for (var i = 1, len = array_length(subimages); i < len; i++) {
-			var tmp = sprite_create_from_surface(canvas.GetSurfaceID(),subimages[@i],0,image_width,image_height,false,false,xoffset,yoffset);
-			sprite_merge(rv, tmp);
-			sprite_delete(tmp);
-		}
+		for (var i = 1, len = array_length(subimages); i < len; i++) 
+			sprite_add_from_surface(rv,canvas.GetSurfaceID(),subimages[@i],0,image_width,image_height,false,false);
 		return rv;
 	}
 	
