@@ -39,8 +39,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "sprRedPotion",
-    "path": "sprites/sprRedPotion/sprRedPotion.yy",
+    "name": "sprRedPotionAnim",
+    "path": "sprites/sprRedPotionAnim/sprRedPotionAnim.yy",
   },
   "spriteMaskId": null,
   "visible": true,
