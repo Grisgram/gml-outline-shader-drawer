@@ -17,6 +17,7 @@ __free = function() {
 /// @function bake()
 bake = function() {
 	__free();
+	origsprite = sprite_index;
 	show_debug_message("Pre-Baking sprite '{0}' with {1} frames", sprite_get_name(sprite_index), image_number);
 	var begintime = current_time;
 	var shader				= shd_outline;
@@ -65,7 +66,6 @@ __draw = function() {
 	if (canvas == undefined) bake();
 	var before = sprite_index;
 	sprite_index = (outline_always || (outline_on_mouse_over && mouse_is_over)) ? dynsprite : origsprite;
-	if (mouse_is_over && before != sprite_index) mouse_is_over = true;
 	if (sprite_index != before && (os_browser != browser_not_a_browser)) image_yscale *= __browser_flip;
 	image_index = canvas.get_image_index(delta_time, image_speed);
 
