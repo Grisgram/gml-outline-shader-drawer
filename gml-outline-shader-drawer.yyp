@@ -26,6 +26,7 @@
     "IDEVersion": "2023.4.0.84",
   },
   "resources": [
+    {"id":{"name":"outline_shader_init_globals","path":"scripts/outline_shader_init_globals/outline_shader_init_globals.yy",},},
     {"id":{"name":"Canvas","path":"scripts/Canvas/Canvas.yy",},},
     {"id":{"name":"__CanvasError","path":"scripts/__CanvasError/__CanvasError.yy",},},
     {"id":{"name":"DemoMace","path":"objects/DemoMace/DemoMace.yy",},},

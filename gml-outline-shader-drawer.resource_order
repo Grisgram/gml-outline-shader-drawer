@@ -5,6 +5,7 @@
     {"name":"outline-shader-drawer","order":4,"path":"folders/outline-shader-drawer.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"outline_shader_init_globals","order":6,"path":"scripts/outline_shader_init_globals/outline_shader_init_globals.yy",},
     {"name":"Canvas","order":2,"path":"scripts/Canvas/Canvas.yy",},
     {"name":"__CanvasError","order":2,"path":"scripts/__CanvasError/__CanvasError.yy",},
     {"name":"DemoMace","order":1,"path":"objects/DemoMace/DemoMace.yy",},
