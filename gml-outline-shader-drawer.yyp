@@ -23,7 +23,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.4.0.84",
+    "IDEVersion": "2023.6.0.89",
   },
   "resources": [
     {"id":{"name":"outline_shader_init_globals","path":"scripts/outline_shader_init_globals/outline_shader_init_globals.yy",},},
