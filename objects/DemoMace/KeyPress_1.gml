@@ -11,6 +11,8 @@ if (keyboard_check(ord("5"))) str = 5;
 
 if (str != -1) {
 	if (outliner.outline_strength != 0) outliner.outline_strength = str;
+	outliner.pulse_min = 0;
+	outliner.pulse_max = str * 2;
 	exit;
 }
 	
