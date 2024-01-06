@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "Sprite_to_Canvas",
+  "name": "__CanvasGMVersion",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "outline-shader-drawer",
-    "path": "folders/outline-shader-drawer.yy",
+    "name": "System",
+    "path": "folders/_third_party_packages_/Canvas/System.yy",
   },
 }
