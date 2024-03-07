@@ -1,11 +1,11 @@
 {
-  "FolderOrderSettings": [
+  "FolderOrderSettings":[
     {"name":"_third_party_packages_","order":3,"path":"folders/_third_party_packages_.yy",},
     {"name":"Canvas","order":1,"path":"folders/_third_party_packages_/Canvas.yy",},
     {"name":"System","order":1,"path":"folders/_third_party_packages_/Canvas/System.yy",},
     {"name":"outline-shader-drawer","order":4,"path":"folders/outline-shader-drawer.yy",},
   ],
-  "ResourceOrderSettings": [
+  "ResourceOrderSettings":[
     {"name":"outline_shader_init_globals","order":6,"path":"scripts/outline_shader_init_globals/outline_shader_init_globals.yy",},
     {"name":"__CanvasSurfFormat","order":6,"path":"scripts/__CanvasSurfFormat/__CanvasSurfFormat.yy",},
     {"name":"CanvasGetAppSurf","order":4,"path":"scripts/CanvasGetAppSurf/CanvasGetAppSurf.yy",},

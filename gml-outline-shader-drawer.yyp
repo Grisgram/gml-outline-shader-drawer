@@ -1,31 +1,31 @@
 {
-  "resourceType": "GMProject",
-  "resourceVersion": "1.7",
-  "name": "gml-outline-shader-drawer",
-  "AudioGroups": [
-    {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
+  "$GMProject":"",
+  "%Name":"gml-outline-shader-drawer",
+  "AudioGroups":[
+    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
-  "configs": {
-    "children": [],
-    "name": "Default",
+  "configs":{
+    "children":[],
+    "name":"Default",
   },
-  "defaultScriptType": 1,
-  "Folders": [
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"_third_party_packages_","folderPath":"folders/_third_party_packages_.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Canvas","folderPath":"folders/_third_party_packages_/Canvas.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"System","folderPath":"folders/_third_party_packages_/Canvas/System.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"demo","folderPath":"folders/demo.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"coin_sequence","folderPath":"folders/demo/coin_sequence.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"objects","folderPath":"folders/demo/objects.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"outline-shader-drawer","folderPath":"folders/outline-shader-drawer.yy",},
+  "defaultScriptType":1,
+  "Folders":[
+    {"$GMFolder":"","%Name":"_third_party_packages_","folderPath":"folders/_third_party_packages_.yy","name":"_third_party_packages_","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Canvas","folderPath":"folders/_third_party_packages_/Canvas.yy","name":"Canvas","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"System","folderPath":"folders/_third_party_packages_/Canvas/System.yy","name":"System","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"demo","folderPath":"folders/demo.yy","name":"demo","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"coin_sequence","folderPath":"folders/demo/coin_sequence.yy","name":"coin_sequence","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"objects","folderPath":"folders/demo/objects.yy","name":"objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"outline-shader-drawer","folderPath":"folders/outline-shader-drawer.yy","name":"outline-shader-drawer","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "IncludedFiles": [],
-  "isEcma": false,
-  "LibraryEmitters": [],
-  "MetaData": {
-    "IDEVersion": "2023.11.1.129",
+  "IncludedFiles":[],
+  "isEcma":false,
+  "LibraryEmitters":[],
+  "MetaData":{
+    "IDEVersion":"2023.11.1.129",
   },
-  "resources": [
+  "name":"gml-outline-shader-drawer",
+  "resources":[
     {"id":{"name":"outline_shader_init_globals","path":"scripts/outline_shader_init_globals/outline_shader_init_globals.yy",},},
     {"id":{"name":"__CanvasSurfFormat","path":"scripts/__CanvasSurfFormat/__CanvasSurfFormat.yy",},},
     {"id":{"name":"CanvasGetAppSurf","path":"scripts/CanvasGetAppSurf/CanvasGetAppSurf.yy",},},
@@ -60,11 +60,13 @@
     {"id":{"name":"_OUTLINE_SHADER_DRAWER_VERSION_","path":"scripts/_OUTLINE_SHADER_DRAWER_VERSION_/_OUTLINE_SHADER_DRAWER_VERSION_.yy",},},
     {"id":{"name":"rmDemo","path":"rooms/rmDemo/rmDemo.yy",},},
   ],
-  "RoomOrderNodes": [
+  "resourceType":"GMProject",
+  "resourceVersion":"2.0",
+  "RoomOrderNodes":[
     {"roomId":{"name":"rmDemo","path":"rooms/rmDemo/rmDemo.yy",},},
   ],
-  "templateType": null,
-  "TextureGroups": [
-    {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
+  "templateType":null,
+  "TextureGroups":[
+    {"$GMTextureGroup":"","%Name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"Default","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
   ],
 }
