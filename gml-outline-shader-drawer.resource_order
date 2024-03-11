@@ -1,9 +1,9 @@
 {
   "FolderOrderSettings":[
-    {"name":"outline-shader-drawer","order":3,"path":"folders/outline-shader-drawer.yy",},
     {"name":"_third_party_packages_","order":1,"path":"folders/_third_party_packages_.yy",},
     {"name":"Canvas","order":1,"path":"folders/_third_party_packages_/Canvas.yy",},
     {"name":"System","order":1,"path":"folders/_third_party_packages_/Canvas/System.yy",},
+    {"name":"outline-shader-drawer","order":3,"path":"folders/outline-shader-drawer.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"DemoMace","order":1,"path":"objects/DemoMace/DemoMace.yy",},
