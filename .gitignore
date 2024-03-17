@@ -314,3 +314,7 @@ UserSettings/
 ![Pp]ackages/packages-lock.json
 /dev-tools/StartPath.txt
 /dev-tools/imgui.ini
+
+# GameMaker temporary files
+*.resource_order
+*.old
