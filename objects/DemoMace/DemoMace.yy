@@ -10,7 +10,7 @@
   "managed":true,
   "name":"DemoMace",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"OutlineObject","path":"objects/OutlineObject/OutlineObject.yy",},"propertyId":{"name":"outline_color","path":"objects/OutlineObject/OutlineObject.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"c_white",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"OutlineObject","path":"objects/OutlineObject/OutlineObject.yy",},"propertyId":{"name":"outline_color","path":"objects/OutlineObject/OutlineObject.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"c_white",},
   ],
   "parent":{
     "name":"objects",
@@ -34,7 +34,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"outline_color_click","filters":[],"listItems":[],"multiselect":false,"name":"outline_color_click","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"c_red","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"outline_color_click","filters":[],"listItems":[],"multiselect":false,"name":"outline_color_click","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"c_red","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
