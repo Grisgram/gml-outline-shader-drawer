@@ -1,7 +1,13 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/19487451/167883263-e96a9e7f-973c-4714-ad47-01253b2db670.png"></img></h1>
-<h1 align="center">3️⃣.2️⃣</h1>
+<h1 align="center">3️⃣.3️⃣</h1>
 
 ### Welcome to the outline-shader-drawer for **GameMaker Studio 2.3+** repository!
+
+> [!CAUTION]
+> As time passes by, this shader has evolved greatly and many new features have been added.
+> This repository here is no longer under maintenance, as the new powerful features require [my raptor library](https://github.com/Grisgram/gml-raptor) to be part of the game. I tried to isolate this shader from raptor, but with no success. Too many dependencies make this shader a real power horse, but only together with raptor.
+> You may use this shader in its current form (it's good and working fine, even in html5), but this version here will receive no new features anymore.
+> Consider including raptor into your project and use the raptor-version of this shader, which is packaged into the raptor release.
 
 This shader is based on a Version of [@JujuAdams](https://github.com/JujuAdams/JujuAdams), credits to him for the basic implementation to draw a sprite outlined. He helped me in implementing varying outline strengths, and I took over from that point.
 
