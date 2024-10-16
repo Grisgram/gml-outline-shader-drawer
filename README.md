@@ -53,7 +53,7 @@ Thank you!
 
 Gris.
 
-(c)2022-2023 [coldrock.games](https://www.coldrock.games)
+(c)2022- [coldrock.games](https://www.coldrock.games)
 
 ----
 
